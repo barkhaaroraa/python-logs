@@ -16,10 +16,11 @@ jobs:
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.gmail.com
-        server_port: 465
+        server_port: 465 
         username: ${{ secrets.EMAIL_USERNAME }}
         password: ${{ secrets.EMAIL_PASSWORD }}
         subject: "Python CI Failed"
         to: barkhaaarora12@gmail.com
         from: GitHub Actions
         body: "The Python CI workflow failed. View logs at: ${{ github.event.workflow_run.html_url }}"
+# committttt
