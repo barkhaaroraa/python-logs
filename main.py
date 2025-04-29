@@ -6,7 +6,7 @@ def main():
     logging.info("Script started.")
 
     try:
-        x = 10/0  # This will raise ZeroDivisionError
+        x = 10/0  # This will raise ZeroDivisionError #ADDED SECRETS 
     except ZeroDivisionError as e:
         #main
         logging.error(f"Error occurred on main: {e}")
